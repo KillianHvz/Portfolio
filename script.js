@@ -286,3 +286,27 @@ window.addEventListener('resize', () => {
     currentIndex = 0;
     document.getElementById('track').style.transform = `translateX(0px)`;
 });
+
+
+/* ---  NAVBAR (CACHE AU SCROLL TELEPHONE) --- */
+
+let lastScrollTop = 0;
+const navbar = document.querySelector('.arcade-nav');
+
+window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop <= 0) {
+        navbar.classList.remove('nav-hidden');
+        lastScrollTop = scrollTop;
+        return;
+    }
+
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('nav-hidden');
+    } else {
+        navbar.classList.remove('nav-hidden');
+    }
+    
+    lastScrollTop = scrollTop;
+});

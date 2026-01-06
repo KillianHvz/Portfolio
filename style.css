@@ -587,3 +587,13 @@ label {
         right: 5px;
     }
 }
+
+.arcade-nav {
+    transition: transform 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .nav-hidden {
+        transform: translateY(-100%);
+    }
+}
