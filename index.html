@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Killian Havez</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="arcade-nav">
+    <div class="logo">KH</div>
+    <ul class="menu">
+        <li><a href="#stats" id="nav-skills">COMPÉTENCES</a></li>
+        <li><a href="#levels" id="nav-projects">PROJETS</a></li>
+        <li><a href="#contact" id="nav-contact">CONTACT</a></li>
+    </ul>
+    
+    <div class="dropdown">
+        <button onclick="toggleDropdown()" class="dropbtn">
+            <img src="img/fr.png" id="current-flag" class="flag-icon" alt="Drapeau"> 
+            <span id="current-lang">FR</span> ▼
+        </button>
+        
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#" onclick="changeLanguage('fr')">
+                <img src="img/fr.png" class="flag-icon" alt="FR"> Français
+            </a>
+            <a href="#" onclick="changeLanguage('en')">
+                <img src="img/en.jpg" class="flag-icon" alt="EN"> English
+            </a>
+            <a href="#" onclick="changeLanguage('es')">
+                <img src="img/es.jpg" class="flag-icon" alt="ES"> Español
+            </a>
+        </div>
+    </div>
+</nav>
+    <header class="hero">
+        <div class="hero-content">
+            <p class="subtitle" id="hero-subtitle">BIENVENUE SUR MON PORTFOLIO</p>
+            <h1 class="glitch">KILLIAN HAVEZ</h1>
+            <p class="role" id="hero-role">DÉVELOPPEUR FULLSTACK</p>
+            <div class="actions">
+                <a href="img/cvfr.pdf" target="_blank" class="btn pixel-btn" id="btn-cv-fr">DOWNLOAD CV (FR)</a>
+                <a href="img/cveng.pdf" target="_blank" class="btn pixel-btn-alt" id="btn-cv-en">DOWNLOAD CV (EN)</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="stats" class="container">
+        <h2 class="section-title" id="title-skills">MES COMPETENCES</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>HTML/CSS</h3>
+                <div class="bar"><div class="fill" style="width:80%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>LARAVEL</h3>
+                <div class="bar"><div class="fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>PYTHON</h3>
+                <div class="bar"><div class="fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>JAVA</h3>
+                <div class="bar"><div class="fill" style="width:60%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>SQL</h3>
+                <div class="bar"><div class="fill" style="width:70%"></div></div>
+            </div>
+            <div class="skill-card">
+                <h3>GIT</h3>
+                <div class="bar"><div class="fill" style="width:85%"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" class="container">
+        <h2 class="section-title" id="title-timeline">PARCOURS</h2>
+        
+        <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+
+            <div class="timeline-item left">
+                <div class="timeline-date">2025 - 2026</div>
+                <div class="timeline-content">
+                    <h3 id="t1-title">BUT INFORMATIQUE (2EME ANNEE)</h3>
+                    <p id="t1-desc">Spécialisation développement. Java avancé,PHP.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right">
+                <div class="timeline-date">2024 - 2025</div>
+                <div class="timeline-content">
+                    <h3 id="t2-title">BUT INFORMATIQUE (1ERE ANNEE)</h3>
+                    <p id="t2-desc">Apprentissage des bases :Java, HTML/CSS, SQL.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item left">
+                <div class="timeline-date">2024</div>
+                <div class="timeline-content">
+                    <h3 id="t3-title">OBTENTION DU BACCALAUREAT</h3>
+                    <p id="t3-desc">Diplôme obtenu avec mention.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="levels" class="container">
+    <h2 class="section-title" id="title-projects">SELECT LEVEL (Projets)</h2>
+    
+    <div class="carousel-wrapper">
+        <button class="arcade-arrow prev-btn" onclick="moveCarousel(-1)">◀</button>
+
+        <div class="carousel-window">
+            <div class="carousel-track" id="track">
+                
+                <article class="project-card">
+                    <div class="card-header">LEVEL 1</div>
+                    <h3 id="p1-title">Marathon</h3>
+                    <p id="p1-desc">Blog musical sur le style SKA.</p>
+                    <div class="tech-tags">
+                        <span>LARAVEL</span> <span>PHP</span>
+                    </div>
+                    <div class="links">
+                        <a href="https://github.com/KillianHvz/Projet-Marathon-2025.git" target="_blank">GITHUB >></a>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="card-header">LEVEL 2</div>
+                    <h3 id="p2-title">LenSymphony</h3>
+                    <p id="p2-desc">Synthétiseur de sons en Java.</p>
+                    <div class="tech-tags"><span>Java</span></div>
+                    <div class="links">
+                        <a href="https://github.com/KillianHvz/LenSymphony.git" target="_blank">GITHUB >></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">LEVEL 3</div>
+                    <h3 id="p3-title">LenSymphonyWeb</h3>
+                    <p id="p3-desc">Gestion de partitions musicales.</p>
+                    <div class="tech-tags"><span>LARAVEL</span> <span>PHP</span></div>
+                    <div class="links">
+                        <a href="https://github.com/KillianHvz/LenSymphonyWeb.git" target="_blank">GITHUB >></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">LEVEL 4</div>
+                    <h3 id="p4-title">CocktailQuizz</h3>
+                    <p id="p4-desc">Quizz API sur les cocktails.</p>
+                    <div class="tech-tags"><span>Python</span> <span>Flask</span> <span>HTML/CSS</span> </div>
+                    <div class="links">
+                        <a href="https://github.com/KillianHvz/CocktailQuizz.git" target="_blank">GITHUB >></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">LEVEL 5</div>
+                    <h3 id="p5-title">Pacman</h3>
+                    <p id="p5-desc">Jeu Pacman complet en Java.</p>
+                    <div class="tech-tags"><span>Java</span></div>
+                    <div class="links">
+                        <a href="https://github.com/KillianHvz/Pacman.git" target="_blank">GITHUB >></a>
+                    </div>
+                </article>
+                            
+            <article class="project-card">
+                    <div class="card-header">LEVEL 6</div>
+                    <div class="card-wip" id="wip-txt-1">EN COURES</div>
+                    
+                    <h3 id="p6-title">Cinéhub</h3>
+                    <p id="p6-desc">Plateforme communautaire de films.</p>
+                    <div class="tech-tags"><span>PHP</span></div>
+                    <div class="links">
+                        </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="card-header">LEVEL 7</div>
+                    <div class="card-wip" id="wip-txt-2">EN COURS</div>
+                    
+                    <h3 id="p7-title">CODE GAME JAM</h3>
+                    <p id="p7-desc">Création d'un jeu en équipe.</p>
+                    <div class="tech-tags"><span>?</span></div>
+                    <div class="links">
+                        </div>
+                </article>
+            </div>
+        </div>
+
+        <button class="arcade-arrow next-btn" onclick="moveCarousel(1)">▶</button>
+        </div>
+    </section>
+
+    <footer id="contact">
+    <div class="container">
+        <h2 class="section-title" id="title-continue">CONTINUE?</h2>
+        <p class="contact-intro" id="contact-intro">Un projet ? Une mission ? Entrons en contact !</p>
+
+        <div class="contact-layout">
+            <form class="arcade-form" action="mailto:tonemail@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="email" id="lbl-mail">VOTRE MAIL</label>
+                    <input type="email" id="email" name="email" class="pixel-input" placeholder="player1@game.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject" id="lbl-obj">OBJET</label>
+                    <input type="text" id="subject" name="subject" class="pixel-input" placeholder="New Mission" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" id="lbl-msg">MESSAGE</label>
+                    <textarea id="message" name="message" class="pixel-input" rows="5" placeholder="..." required></textarea>
+                </div>
+
+                <div class="form-group math-captcha">
+                    <label>5 - 1 = </label>
+                    <input type="text" class="pixel-input small-input">
+                </div>
+
+                <button type="submit" class="btn pixel-btn" id="btn-send">SEND MESSAGE</button>
+            </form>
+
+            <div class="contact-sidebar">
+                <a href="https://www.linkedin.com/in/killian-havez" target="_blank" class="social-btn">
+                    <span class="icon">Linked[in]</span>
+                    <span class="details">KILLIAN HAVEZ</span>
+                </a>
+
+                <a href="https://github.com/KillianHvz/KillianHvz" target="_blank" class="social-btn alt-color">
+                    <span class="icon">GitHub</span>
+                    <span class="details" id="txt-github">Venez visiter mon GitHub</span>
+                </a>
+            </div>
+        </div>
+        
+        <p class="copyright">© 2026 - Killian Havez</p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
