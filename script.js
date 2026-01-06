@@ -247,25 +247,28 @@ window.onclick = function(event) {
     }
 }
 
-// --- LOGIQUE DU CAROUSEL (BOUCLE INFINIE) --- 
 
 let currentIndex = 0;
 
 function moveCarousel(direction) {
     const track = document.getElementById('track');
     const cards = document.querySelectorAll('.project-card');
-    
+
     if (cards.length === 0) return;
 
-    const cardStyle = window.getComputedStyle(cards[0]);
-    const cardWidth = cards[0].offsetWidth + 20; 
-    
+    const trackStyle = window.getComputedStyle(track);
+    const gap = parseFloat(trackStyle.gap) || 20;
+
+    const cardWidth = cards[0].offsetWidth + gap;
+
     const containerWidth = document.querySelector('.carousel-window').offsetWidth;
-    const visibleCards = Math.floor(containerWidth / cardWidth);
-    
+
+    const visibleCards = Math.floor((containerWidth + gap) / cardWidth);
+
     const totalCards = cards.length;
+
     let maxIndex = totalCards - visibleCards;
-    
+
     if (maxIndex < 0) maxIndex = 0;
 
     currentIndex += direction;
