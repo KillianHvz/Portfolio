@@ -6,8 +6,8 @@ const translations = {
         nav_contact: "CONTACT",
         subtitle: "BIENVENUE SUR MON PORTFOLIO",
         role: "DÉVELOPPEUR FULLSTACK",
-        btn_cv_fr: "TÉLÉCHARGER CV (FR)",
-        btn_cv_en: "TÉLÉCHARGER CV (EN)",
+        btn_cv_fr: "TELECHARGER CV (FR)",
+        btn_cv_en: "TELECHARGER CV (EN)",
         
         // Titres Sections
         title_skills: "MES COMPÉTENCES",
@@ -38,7 +38,7 @@ const translations = {
         p6_desc: "Plateforme communautaire de films.",
         p7_title: "CODE GAME JAM",
         p7_desc: "Création d'un jeu en équipe.",
-        wip_txt: "EN DÉVELOPPEMENT",
+        wip_txt: "EN COURS",
 
         // --- CONTACT ---
         contact_intro: "Un projet ? Une mission ? Entrons en contact !",
@@ -85,7 +85,7 @@ const translations = {
         p6_desc: "Community movie platform.",
         p7_title: "CODE GAME JAM",
         p7_desc: "Creating a game as a team.",
-        wip_txt: "IN DEVELOPMENT",
+        wip_txt: "IN PROGRESS",
 
         // --- CONTACT ---
         contact_intro: "A project? Hiring? Let's get in touch!",
@@ -132,7 +132,7 @@ const translations = {
         p6_desc: "Plataforma comunitaria de películas.",
         p7_title: "CODE GAME JAM",
         p7_desc: "Creación de un juego en equipo.",
-        wip_txt: "EN DESARROLLO",
+        wip_txt: "EN CURSO",
 
         // --- CONTACT ---
         contact_intro: "¿Un proyecto? ¿Contratando? ¡Hablemos!",
