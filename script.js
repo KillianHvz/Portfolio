@@ -160,11 +160,11 @@ function changeLanguage(lang) {
     let flagElement = document.getElementById('current-flag');
     
     if (lang === 'fr') {
-        flagElement.src = "fr.png"; 
+        flagElement.src = "img/fr.png"; 
     } else if (lang === 'en') {
-        flagElement.src = "en.jpg"; 
+        flagElement.src = "img/en.jpg"; 
     } else if (lang === 'es') {
-        flagElement.src = "es.jpg"; 
+        flagElement.src = "img/es.jpg"; 
     }
     
     // 3. Mettre à jour tous les textes de la page
